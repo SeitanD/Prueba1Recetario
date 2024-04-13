@@ -7,12 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Agrega un evento de escucha al formulario para prevenir su envío predeterminado
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Previene el envío predeterminado del formulario
 
         // Obtiene los valores de los campos del formulario
         const nombre = form.nombre.value;
         const email = form.email.value;
         const password = form.password.value;
+
+        // Expresión regular para validar que el nombre contenga solo letras
+        const patronNombre = /^[a-zA-Z\s]+$/;
+
+        // Validación del nombre con la expresión regular
+        if (!patronNombre.test(nombre)) {
+            mensaje.textContent = 'El nombre solo puede contener letras';
+            return; // Sale de la función si el nombre no es válido
+        }
 
         // Aquí puedes agregar la lógica de validación para el registro
         // Por ejemplo, verificar que el correo electrónico sea válido y la contraseña tenga una longitud mínima

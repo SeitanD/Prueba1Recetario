@@ -1,152 +1,153 @@
 /* Estilos generales para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo de la página */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno */
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #ff8f46; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
 }
 
 /* Estilos para el contenido del encabezado */
 .contenido-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    display: flex; /* Usa un diseño flexbox para los elementos internos */
+    justify-content: space-between; /* Espacio entre los elementos internos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 0 20px; /* Espaciado interno horizontal */
 }
 
 /* Estilo para el enlace del logo */
 #logo {
-    color: black; /* Color negro para el texto del logo */
+    color: black; /* Color del texto del logo */
     text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 #logo:hover {
-    color: black; /* Mantén el color negro incluso cuando se pasa el cursor sobre el enlace */
+    color: black; /* Mantén el color del texto cuando se pasa el cursor */
 }
 
 /* Estilos para el texto del logo */
 .logo h1 {
-    margin: 0;
+    margin: 0; /* Elimina el margen del texto del logo */
 }
 
 /* Estilos para el formulario de registro */
 .formulario {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px; /* Anchura máxima del formulario */
+    margin: 50px auto; /* Margen externo y alinear al centro */
+    background-color: #fff; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra */
 }
 
 /* Estilos para los campos del formulario */
 .campo {
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 20px; /* Margen inferior */
+    position: relative; /* Posición relativa para los íconos */
 }
 
 /* Estilos para los íconos dentro de los campos */
 .campo i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10px;
-    color: #888;
+    position: absolute; /* Posición absoluta para colocar los íconos */
+    top: 50%; /* Alinear al centro verticalmente */
+    transform: translateY(-50%); /* Ajuste fino de la posición vertical */
+    left: 10px; /* Posición a la izquierda */
+    color: #888; /* Color del ícono */
 }
 
 /* Estilos para los campos de entrada */
 input {
-    padding: 10px;
-    padding-left: 30px;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 10px; /* Espaciado interno */
+    padding-left: 30px; /* Espaciado interno adicional a la izquierda */
+    width: 90%; /* Anchura del campo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 3px; /* Borde redondeado */
 }
 
 /* Estilos para el botón de enviar */
 button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    width: 100%;
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Borde redondeado */
+    cursor: pointer; /* Cursor al pasar por encima */
+    width: 100%; /* Anchura del botón */
 }
 
 button:hover {
-    background-color: #ff8f46;
+    background-color: #ff8f46; /* Cambio de color al pasar el cursor */
 }
 
 /* Estilos para el mensaje de error o información */
 #mensaje {
-    color: red;
-    text-align: center;
-    margin-top: 20px;
+    color: red; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    margin-top: 20px; /* Margen superior */
 }
 
 /* Estilos para las opciones adicionales */
 .opciones {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Alineación del texto */
+    margin-top: 20px; /* Margen superior */
 }
 
 .opciones a {
-    color: #007BFF;
-    text-decoration: none;
+    color: #007BFF; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 .opciones a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
+
 /* Estilos del pie de página */
 footer {
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ff8f46; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
 }
 
 .contenido-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: flex; /* Usa un diseño flexbox para los elementos internos */
+    justify-content: space-around; /* Espacio entre los elementos internos */
+    align-items: flex-start; /* Alineación de los elementos verticalmente */
 }
 
 .secciones {
-    flex: 1;
-    margin: 0 20px;
+    flex: 1; /* Toma todo el espacio disponible */
+    margin: 0 20px; /* Margen externo horizontal */
 }
 
 .secciones h3 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #fff; /* Borde inferior */
+    padding-bottom: 10px; /* Espaciado interno inferior */
 }
 
 .secciones ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el relleno */
 }
 
 .secciones ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Margen inferior */
 }
 
 .secciones ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 .derechos {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #fff;
-    padding-top: 20px;
+    text-align: center; /* Alineación del texto */
+    margin-top: 20px; /* Margen superior */
+    border-top: 1px solid #fff; /* Borde superior */
+    padding-top: 20px; /* Espaciado interno superior */
 }

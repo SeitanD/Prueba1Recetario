@@ -1,114 +1,124 @@
+/* Centrar el contenido del body */
 body {
-    text-align: center; /* Centrar el contenido */
+    text-align: center;
 }
 
+/* Alinear el texto de #inicio a la izquierda */
 #inicio {
-    text-align: auto; /* Alinear el texto de inicio a la izquierda */
+    text-align: auto;
 }
 
+/* Alinear el texto de #Recetas a la izquierda */
 #Recetas {
-    text-align: auto; /* Alinear el texto de recetas a la izquierda */
+    text-align: auto;
 }
 
+/* Centrar la imagen dentro de la tarjeta */
 .card img {
-    margin: 0 auto; /* Centrar la imagen dentro de la tarjeta */
+    margin: 0 auto;
 }
 
+/* Alinear el texto a la izquierda para elementos con la clase .info */
 .info {
-    text-align: auto; /* Alinear el texto a la izquierda */
+    text-align: auto;
 }
+
 /* Estilos del pie de página */
 footer {
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ff8f46; /* Color de fondo naranja */
+    color: #fff; /* Color de texto blanco */
+    padding: 20px 0; /* Relleno arriba y abajo de 20px */
 }
 
+/* Estilos del contenedor del pie de página */
 .contenido-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: flex; /* Utiliza un modelo de caja flexible */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio */
 }
 
+/* Estilos para las secciones */
 .secciones {
-    flex: 1;
-    margin: 0 20px;
+    flex: 1; /* Establece la flexibilidad del elemento */
+    margin: 0 20px; /* Añade márgenes horizontales */
 }
 
+/* Estilos para los títulos h3 dentro de las secciones */
 .secciones h3 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #fff; /* Añade un borde inferior blanco */
+    padding-bottom: 10px; /* Relleno inferior de 10px */
 }
 
+/* Estilos para las listas ul dentro de las secciones */
 .secciones ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
 }
 
+/* Estilos para los elementos li dentro de las listas ul de las secciones */
 .secciones ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Añade un margen inferior de 5px */
 }
 
+/* Estilos para los enlaces a dentro de los elementos li de las listas ul de las secciones */
 .secciones ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
+/* Estilos para los derechos de autor */
 .derechos {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #fff;
-    padding-top: 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Añade margen superior de 20px */
+    border-top: 1px solid #fff; /* Añade un borde superior blanco */
+    padding-top: 20px; /* Relleno superior de 20px */
 }
+
 /* Estilos para el modal */
 .modal {
-    display: none; /* Ocultar el modal por defecto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Establece posición fija */
+    top: 0; /* Posiciona en la parte superior */
+    left: 0; /* Posiciona en la parte izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semi-transparente */
 }
 
+/* Estilos para el contenido del modal */
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
+    position: absolute; /* Establece posición absoluta */
+    top: 50%; /* Posiciona en el 50% del contenedor padre */
+    left: 50%; /* Posiciona en el 50% del contenedor padre */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    background-color: #fefefe; /* Color de fondo blanco */
     padding: 30px; /* Aumentar el padding para hacer el modal más grande */
-    border: 1px solid #3b3b3b;
+    border: 1px solid #3b3b3b; /* Borde sólido de color gris oscuro */
     width: 90%; /* Aumentar el ancho del modal */
     max-width: 500px; /* Aumentar el ancho máximo del modal */
-    text-align: center;
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente de 28px */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano */
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Estilos para el botón Aceptar */
+/* Estilos para el botón Aceptar dentro del modal */
 .modal-content button {
     background-color: black; /* Fondo negro */
     color: white; /* Texto blanco */
     padding: 10px 20px; /* Ajustar padding */
-    border: none;
-    cursor: pointer;
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor a una mano */
     transition: background-color 0.3s; /* Transición suave */
 }
 
+/* Estilos para el botón Aceptar al pasar el mouse */
 .modal-content button:hover {
     background-color: orange; /* Fondo naranja al pasar el mouse */
 }

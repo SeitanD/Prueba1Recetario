@@ -1,25 +1,25 @@
 /* Estilos generales para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Fuente y familia de fuentes */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #ff8f46; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 0; /* Relleno superior e inferior de 10px y 0px a los lados */
+    text-align: center; /* Alineación del texto al centro */
 }
 
 /* Estilos para el contenido del encabezado */
 .contenido-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-between; /* Distribución del espacio entre los elementos */
+    align-items: center; /* Alineación vertical */
+    padding: 0 20px; /* Relleno de 20px a los lados */
 }
 
 /* Estilo para el enlace del logo */
@@ -34,105 +34,105 @@ header {
 
 /* Estilos para el texto del logo */
 .logo h1 {
-    margin: 0;
+    margin: 0; /* Eliminar márgenes */
 }
 
 /* Estilos para el formulario de contacto */
 .formulario {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Márgenes superior e inferior de 50px y automático a los lados */
+    background-color: #fff; /* Color de fondo */
+    padding: 20px; /* Relleno interno */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra */
 }
 
 /* Estilos para los campos del formulario */
 .campo {
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 20px; /* Márgenes inferiores de 20px */
+    position: relative; /* Posición relativa */
 }
 
 /* Estilos para los íconos dentro de los campos */
 .campo i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10px;
-    color: #888;
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Alineación vertical al centro */
+    transform: translateY(-50%); /* Ajuste de posición vertical */
+    left: 10px; /* Posición a la izquierda */
+    color: #888; /* Color del ícono */
 }
 
 /* Estilos para los campos de entrada */
 input,
 textarea {
-    padding: 10px;
-    padding-left: 30px;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 10px; /* Relleno interno */
+    padding-left: 30px; /* Relleno interno del lado izquierdo */
+    width: 90%; /* Ancho del 90% */
+    border: 1px solid #ccc; /* Borde de 1px sólido */
+    border-radius: 3px; /* Borde redondeado */
 }
 
 /* Estilos para el botón de enviar */
 button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    width: 100%;
+    padding: 10px 20px; /* Relleno interno */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Borde redondeado */
+    cursor: pointer; /* Cambio de cursor */
+    width: 100%; /* Ancho del 100% */
 }
 
 button:hover {
-    background-color: #ff8f46;
+    background-color: #ff8f46; /* Color de fondo al pasar el cursor */
 }
 
 /* Estilos para el mensaje de error o información */
 #respuesta {
-    color: red;
-    text-align: center;
-    margin-top: 20px;
+    color: red; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 20px; /* Márgen superior de 20px */
 }
 /* Estilos del pie de página */
 footer {
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ff8f46; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Relleno superior e inferior de 20px */
 }
 
 .contenido-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-around; /* Distribución del espacio entre los elementos */
+    align-items: flex-start; /* Alineación vertical */
 }
 
 .secciones {
-    flex: 1;
-    margin: 0 20px;
+    flex: 1; /* Proporción de espacio dentro del contenedor flex */
+    margin: 0 20px; /* Márgenes de 20px a los lados */
 }
 
 .secciones h3 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #fff; /* Borde inferior de 2px sólido */
+    padding-bottom: 10px; /* Relleno inferior de 10px */
 }
 
 .secciones ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Sin estilo de lista */
+    padding: 0; /* Sin relleno */
 }
 
 .secciones ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Márgenes inferiores de 5px */
 }
 
 .secciones ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
 }
 
 .derechos {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #fff;
-    padding-top: 20px;
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 20px; /* Márgen superior de 20px */
+    border-top: 1px solid #fff; /* Borde superior de 1px sólido */
+    padding-top: 20px; /* Relleno superior de 20px */
 }

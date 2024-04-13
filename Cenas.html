@@ -1,40 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html lang="es"> <!-- Inicio del documento HTML con lenguaje español -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas - Cenas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="cena-estilo.css"> <!-- CSS externo -->
+    <meta charset="UTF-8"> <!-- Codificación del documento -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala y ancho del viewport -->
+    <title>Recetas - Cenas</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Enlace al CSS de FontAwesome -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> <!-- Enlace al CSS de Flickity -->
+    <!-- Estilos y scripts de Bootstrap para diseño y funcionalidad -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlace al CSS propio -->
+    <link rel="stylesheet" href="cena-estilo.css"> <!-- Enlace al CSS específico para la sección de cenas -->
 </head>
 <body>
     <!-- Modal -->
 <div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="cerrarModal()">&times;</span>
-        <p>Funcion temporalmente fuera de servicio.</p>
-        <button onclick="cerrarModal()">Aceptar</button> <!-- Botón Aceptar -->
+        <span class="close" onclick="cerrarModal()">&times;</span> <!-- Botón para cerrar el modal -->
+        <p>Funcion temporalmente fuera de servicio.</p> <!-- Mensaje dentro del modal -->
+        <button onclick="cerrarModal()">Aceptar</button> <!-- Botón para aceptar y cerrar el modal -->
     </div>
 </div>
-
-
 
     <!-- SECCION INICIO -->
     <section id="inicio">
         <header>
             <div class="contenido-header">
-                <div class="logo"> <!-- Logotipo -->
+                <div class="logo"> <!-- Contenedor del logotipo -->
                     <h1>Q'RICO</h1> <!-- Texto del logotipo -->
                 </div>
-                <nav id="nav"> <!-- Navegación -->
+                <nav id="nav"> <!-- Navegación principal -->
                     <ul>
+                        <!-- Enlaces del menú -->
                         <li>
                             <a href="./index.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-house"></i> <!-- Icono de casa -->
-                                <span>Inicio</span> <!-- Texto de enlace -->
+                                <span>Inicio</span> <!-- Texto del enlace -->
                             </a>
                         </li>
                         <li>
@@ -63,13 +65,14 @@
                     <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>  <!-- Icono de Twitter -->
                 </div>
                 <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i> <!-- Icono de menú -->
+                    <i class="fa-solid fa-bars"></i> <!-- Icono de menú para dispositivos móviles -->
                 </div>
-            </div>>
+            </div>
         </header>
         <!-- Carrusel -->
         <div class="carrusel">
             <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <!-- Imágenes del carrusel -->
                 <div class="gallery-cell" >
                     <img src="img/cena.jpg" alt=""> <!-- Imagen 1 -->
                 </div>
@@ -92,15 +95,16 @@
     <!-- Recetas -->
     <section id="Recetas">
         <br>
-        <h2>Ceviche de champiñones y palta</h2>
+        <h2>Ceviche de champiñones y palta</h2> <!-- Título de la receta -->
         <div class="fila">
             <div class="item">
                 <div class="card">
-                    <img src="img/ceviche.jpg" alt="" style="max-width: 300px;">
+                    <img src="img/ceviche.jpg" alt="" style="max-width: 300px;"> <!-- Imagen de la receta -->
                     <div class="info">
-                        <h1>Ingredientes</h1>
+                        <h1>Ingredientes</h1> <!-- Título de ingredientes -->
                         
                             <ul>
+                                <!-- Lista de ingredientes -->
                                 <li>450 g de champiñones</li>
                                 <li>10 ml de zumo de limón</li>
                                 <li>Ají picante a gusto</li>
@@ -112,8 +116,9 @@
                          
                             </ul>
                         </p>
-                        <h1>Preparacion</h1>
+                        <h1>Preparacion</h1> <!-- Título de preparación -->
                             <ul>
+                                <!-- Pasos de preparación -->
                                 <li>Triturar aceitunas, alcaparras y anchoas con aceite.</li>
                                 <li>Cocer calabacines, cortarlos en láminas y formar abanicos.</li>
                                 <li>Colocar calabacines en fuente, agregar aceite y queso, gratinar.</li>
@@ -130,10 +135,10 @@
        <!-- Pie de página -->
        <footer>
         <div class="derechos">
-            <p>© 2024 Q'RICO - Todos los derechos reservados</p>
+            <p>© 2024 Q'RICO - Todos los derechos reservados</p> <!-- Derechos de autor -->
         </div>
     </footer>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> <!-- Script de Flickity -->
+    <script src="script.js"></script> <!-- Script propio -->
 </body>
 </html>

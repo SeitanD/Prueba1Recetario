@@ -7,6 +7,9 @@
     <title>Recetas - Desayunos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Estilos y scripts de Bootstrap para diseño y funcionalidad -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="desayuno-estilo.css"> <!-- CSS externo -->
 </head>
@@ -133,7 +136,154 @@
         </div>
     </section>
        <!-- Pie de página -->
-       <footer>
+       <!DOCTYPE html>
+       <html lang="es">
+       <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Recetas - Desayunos</title>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+           <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+           <link rel="stylesheet" href="estilo.css">
+           <link rel="stylesheet" href="desayuno-estilo.css"> <!-- CSS externo -->
+           <style>
+               /* Estilos generales */
+               body {
+                   text-align: center; /* Centrar el contenido */
+               }
+       
+               #inicio,
+               #Recetas {
+                   text-align: auto; /* Alinear el texto de inicio y recetas a la izquierda */
+               }
+       
+               .card img {
+                   margin: 0 auto; /* Centrar la imagen dentro de la tarjeta */
+               }
+       
+               .info {
+                   text-align: auto; /* Alinear el texto a la izquierda */
+               }
+       
+               /* Estilos del pie de página */
+               footer {
+                   background-color: #ff8f46;
+                   color: #fff;
+                   padding: 20px 0;
+               }
+       
+               .contenido-footer {
+                   display: flex;
+                   justify-content: space-around;
+                   align-items: flex-start;
+               }
+       
+               .secciones {
+                   flex: 1;
+                   margin: 0 20px;
+               }
+       
+               .secciones h3 {
+                   border-bottom: 2px solid #fff;
+                   padding-bottom: 10px;
+               }
+       
+               .secciones ul {
+                   list-style: none;
+                   padding: 0;
+               }
+       
+               .secciones ul li {
+                   margin-bottom: 5px;
+               }
+       
+               .secciones ul li a {
+                   color: #fff;
+                   text-decoration: none;
+               }
+       
+               .derechos {
+                   text-align: center;
+                   margin-top: 20px;
+                   border-top: 1px solid #fff;
+                   padding-top: 20px;
+               }
+       
+               /* Estilos para el modal */
+               .modal {
+                   display: none; /* Ocultar el modal por defecto */
+                   position: fixed;
+                   top: 0;
+                   left: 0;
+                   width: 100%;
+                   height: 100%;
+                   background-color: rgba(0, 0, 0, 0.7);
+               }
+       
+               .modal-content {
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%, -50%);
+                   background-color: #fefefe;
+                   padding: 30px; /* Aumentar el padding para hacer el modal más grande */
+                   border: 1px solid #3b3b3b;
+                   width: 90%; /* Aumentar el ancho del modal */
+                   max-width: 500px; /* Aumentar el ancho máximo del modal */
+                   text-align: center;
+               }
+       
+               .close {
+                   color: #aaa;
+                   float: right;
+                   font-size: 28px;
+                   font-weight: bold;
+                   cursor: pointer;
+               }
+       
+               .close:hover,
+               .close:focus {
+                   color: black;
+                   text-decoration: none;
+                   cursor: pointer;
+               }
+       
+               /* Estilos para el botón Aceptar */
+               .modal-content button {
+                   background-color: black; /* Fondo negro */
+                   color: white; /* Texto blanco */
+                   padding: 10px 20px; /* Ajustar padding */
+                   border: none;
+                   cursor: pointer;
+                   transition: background-color 0.3s; /* Transición suave */
+               }
+       
+               .modal-content button:hover {
+                   background-color: orange; /* Fondo naranja al pasar el mouse */
+               }
+           </style>
+       </head>
+       <body>
+           <!-- Modal -->
+           <div id="myModal" class="modal">
+               <div class="modal-content">
+                   <span class="close" onclick="cerrarModal()">&times;</span>
+                   <p>Funcion temporalmente fuera de servicio.</p>
+                   <button onclick="cerrarModal()">Aceptar</button> <!-- Botón Aceptar -->
+               </div>
+           </div>
+           <!-- Pie de página -->
+           <footer>
+               <div class="derechos">
+                   <p>© 2024 Q'RICO - Todos los derechos reservados</p>
+               </div>
+           </footer>
+           <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+           <script src="script.js"></script>
+       </body>
+       </html>
+          <footer>
         <div class="derechos">
             <p>© 2024 Q'RICO - Todos los derechos reservados</p>
         </div>
