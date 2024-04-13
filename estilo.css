@@ -1,311 +1,336 @@
 /* Establece reglas para todos los elementos del documento */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0;           /* Establece el margen de todos los elementos a 0 */
+    padding: 0;          /* Establece el relleno de todos los elementos a 0 */
     font-family: 'Quicksand'; /* Establece la fuente para todo el documento */
 }
 
+/* Añade desplazamiento suave al hacer clic en enlaces internos */
 html{
-    scroll-behavior: smooth; /* Añade un desplazamiento suave al hacer clic en enlaces internos */
+    scroll-behavior: smooth;
 }
 
-/* SECCION INICIO */
+/* Estilos para la sección de inicio */
 #inicio{
-    height: 100vh; /* Establece la altura al 100% del viewport */
-    display: flex;
+    height: 100vh;       /* Establece la altura al 100% del viewport */
+    display: flex;      /* Utiliza un modelo de caja flexible */
     flex-direction: column; /* Organiza los elementos en columna */
 }
 
+/* Estilos para el encabezado de la sección de inicio */
 #inicio header .contenido-header{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    position: relative;
+    max-width: 1200px;  /* Establece el ancho máximo */
+    margin: auto;       /* Centra el contenido horizontalmente */
+    display: flex;      /* Utiliza un modelo de caja flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 40px 20px; /* Añade relleno */
+    position: relative; /* Establece posición relativa para posicionamiento absoluto */
 }
 
+/* Estilos para la navegación dentro del encabezado de inicio */
 #inicio header .contenido-header nav{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute; /* Establece posición absoluta */
+    left: 50%;          /* Coloca el elemento a la mitad del ancho del contenedor padre */
+    transform: translateX(-50%); /* Centra el elemento horizontalmente */
 }
 
+/* Estilos para la lista dentro de la navegación */
 #inicio header .contenido-header nav ul{
-    display: flex;
-    list-style: none;
+    display: flex;     /* Utiliza un modelo de caja flexible */
+    list-style: none;  /* Elimina las viñetas de la lista */
 }
 
+/* Estilos para el logotipo dentro del encabezado */
 #inicio header .contenido-header .logo{
-    color: #ff8f46;
-    font-size: 22px;
+    color: #ff8f46;    /* Establece el color del texto */
+    font-size: 22px;   /* Establece el tamaño de la fuente */
 }
 
-#inicio header .contenido-header nav ul li{
-    text-align: center;
-}
-
+/* Estilos para los íconos dentro de la lista de navegación */
 #inicio header .contenido-header nav ul li i{
-    display: block;
-    color: #a8a8a8;
-    margin-bottom: 10px;
+    display: block;    /* Convierte el elemento en un bloque */
+    color: #a8a8a8;    /* Establece el color del ícono */
+    margin-bottom: 10px; /* Añade un margen inferior */
 }
 
+/* Estilos para los enlaces dentro de la lista de navegación */
 #inicio header .contenido-header nav ul li a{
-    display: block;
-    text-decoration: none;
-    color:#a8a8a8;
-    margin: 0px 20px;
+    display: block;    /* Convierte el elemento en un bloque */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color:#a8a8a8;     /* Establece el color del texto */
+    margin: 0px 20px;  /* Añade márgenes horizontales */
 }
 
+/* Estilos para el ícono al pasar el mouse sobre los enlaces */
 #inicio header .contenido-header nav ul li:hover i{
-    color: #ff8f46;
+    color: #ff8f46;    /* Cambia el color del ícono al pasar el mouse */
 }
 
+/* Estilos para los íconos de redes sociales */
 #inicio header .contenido-header .social a{
-    display: inline-block;
-    background-color: #ff8f46;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
+    display: inline-block; /* Convierte el elemento en un bloque en línea */
+    background-color: #ff8f46; /* Establece el color de fondo */
+    text-decoration: none;    /* Elimina el subrayado del enlace */
+    color: #fff;       /* Establece el color del texto */
+    padding: 10px 20px; /* Añade relleno */
+    border-radius: 30px; /* Añade bordes redondeados */
 }
 
+/* Estilos para los íconos de redes sociales */
 #inicio header .contenido-header .social > i{
-    display: inline-block;
-    color: #a8a8a8;
-    margin-left: 10px;
+    display: inline-block; /* Convierte el elemento en un bloque en línea */
+    color: #a8a8a8;     /* Establece el color del ícono */
+    margin-left: 10px;  /* Añade un margen izquierdo */
 }
 
+/* Estilos para el icono de menú responsivo */
 .nav-responsive{
-    display: none;
-    font-size: 25px;
-    color: #a8a8a8;
+    display: none;      /* Oculta el elemento por defecto */
+    font-size: 25px;    /* Establece el tamaño de la fuente */
+    color: #a8a8a8;     /* Establece el color del ícono */
 }
 
-/* Carrusel */
+/* Estilos para la sección del carrusel */
 #inicio .carrusel{
-    position: relative;
-    height: 100%;
+    position: relative; /* Establece posición relativa */
+    height: 100%;       /* Establece la altura al 100% */
 }
 
+/* Estilos para la información dentro del carrusel */
 #inicio .carrusel .info{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
-    text-align: center;
-    color:#ffffff;
+    position: absolute; /* Establece posición absoluta */
+    top: 50%;           /* Coloca el elemento a la mitad de la altura */
+    left: 50%;          /* Coloca el elemento a la mitad del ancho */
+    transform: translate(-50%,-50%); /* Centra el elemento */
+    width: 50%;         /* Establece el ancho */
+    text-align: center; /* Centra el texto horizontalmente */
+    color:#ffffff;      /* Establece el color del texto */
 }
 
+/* Estilos para el título dentro de la información del carrusel */
 #inicio .carrusel .info h2{
-    font-size: 70px; /* Aumenta el tamaño del texto */
-    margin-bottom: 20px;
+    font-size: 70px;    /* Establece el tamaño de la fuente */
+    margin-bottom: 20px; /* Añade un margen inferior */
 }
 
+/* Estilos para el botón dentro de la información del carrusel */
 #inicio .carrusel .info button{
-    display: inline-block;
-    margin-top: 30px;
-    font-size: 50px;
-    border:none;
-    background-color: #f1a239;
-    color: #ffffff;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
+    display: inline-block; /* Convierte el elemento en un bloque en línea */
+    margin-top: 30px;   /* Añade un margen superior */
+    font-size: 50px;    /* Establece el tamaño de la fuente */
+    border:none;        /* Elimina el borde */
+    background-color: #f1a239; /* Establece el color de fondo */
+    color: #ffffff;     /* Establece el color del texto */
+    padding: 7px 25px;  /* Añade relleno */
+    border-radius: 30px; /* Añade bordes redondeados */
+    cursor: pointer;    /* Cambia el cursor al pasar por encima */
 }
 
+/* Estilos para la galería del carrusel */
 #inicio .gallery {
-    width: 100%;
-    height: 100%;
+    width: 100%;        /* Establece el ancho al 100% */
+    height: 100%;       /* Establece la altura al 100% */
 }
 
+/* Estilos para las celdas de la galería */
 #inicio .gallery-cell {
-    width: 100%;
-    margin-right: 10px;
-    height: 100%;
+    width: 100%;       /* Establece el ancho al 100% */
+    margin-right: 10px; /* Añade un margen derecho */
+    height: 100%;      /* Establece la altura al 100% */
 }
 
+/* Estilos para las imágenes dentro de las celdas de la galería */
 #inicio .gallery-cell img{
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    display: block;     /* Convierte el elemento en un bloque */
+    width: 100vw;       /* Establece el ancho al 100% del viewport */
+    height: 100vh;      /* Establece la altura al 100% del viewport */
+    object-fit: cover;  /* Escala la imagen para que se ajuste al contenedor manteniendo la relación de aspecto */
 }
 
-/* SECCION COMIDAS */
+/* Estilos para la sección de comidas */
 #Comidas{
-    padding: 50px 0;
+    padding: 50px 0;    /* Añade relleno */
 }
 
+/* Estilos para el título de la sección de comidas */
 #Comidas h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px; /* Aumenta el tamaño del título */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-weight: bold;  /* Establece el peso de la fuente */
+    font-size: 50px;    /* Establece el tamaño de la fuente */
 }
 
+/* Estilos para la fila de elementos de comidas */
 #Comidas .fila{
-    display: CENTER;
-    max-width: 1100px;
-    margin: auto;
+    display: CENTER;    /* Establece el modo de visualización */
+    max-width: 1100px;  /* Establece el ancho máximo */
+    margin: auto;       /* Centra el contenido horizontalmente */
 }
 
+/* Estilos para las imágenes de los elementos de comidas */
 #Comidas .fila .item img{
-    max-width: 80px;
+    max-width: 80px;    /* Establece el ancho máximo */
 }
 
+/* Estilos para los elementos de la fila de comidas */
 #Comidas .fila .item{
-    display: flex;
-    align-items:center;
-    margin: 20px 10px;
-    padding: 5px;
+    display: flex;      /* Utiliza un modelo de caja flexible */
+    align-items:center; /* Centra los elementos verticalmente */
+    margin: 20px 10px;  /* Añade márgenes */
+    padding: 5px;       /* Añade relleno */
 }
 
+/* Estilos al pasar el mouse sobre los elementos de comidas */
 #Comidas .fila .item:hover{
-    background-color:#ff8f46
+    background-color:#ff8f46 /* Cambia el color de fondo al pasar el mouse */
 }
 
+/* Estilos para la información de los elementos de comidas */
 #Comidas .fila .item .info{
-    margin-left: 15px;
-    font-size: 14px;
+    margin-left: 15px;  /* Añade un margen izquierdo */
+    font-size: 14px;    /* Establece el tamaño de la fuente */
 }
 
+/* Estilos para el botón de la sección de comidas */
 #Comidas button{
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 20px;
-    border:none;
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
+    display: block;     /* Convierte el elemento en un bloque */
+    width: fit-content; /* Establece el ancho al contenido */
+    margin: auto;       /* Centra el elemento horizontalmente */
+    margin-top: 20px;   /* Añade un margen superior */
+    font-size: 20px;    /* Establece el tamaño de la fuente */
+    border:none;        /* Elimina el borde */
+    background-color: #ff8f46; /* Establece el color de fondo */
+    color: #fff;        /* Establece el color del texto */
+    padding: 7px 25px;  /* Añade relleno */
+    border-radius: 30px; /* Añade bordes redondeados */
+    cursor: pointer;    /* Cambia el cursor al pasar por encima */
 }
 
-/* SECCION RESPONSIVE */
+/* Estilos responsivos para pantallas con ancho de hasta 1070px */
 @media screen and (max-width:1070px) {
     #inicio header .contenido-header .social{
-        display: none;
+        display: none;  /* Oculta el elemento */
     }
     #inicio header .contenido-header nav{
-        position: static;
-        transform: translateX(0);
+        position: static; /* Establece posición estática */
+        transform: translateX(0); /* Restablece la transformación */
     }
 }
 
+/* Estilos responsivos para pantallas con ancho de hasta 700px */
 @media screen and (max-width:700px) {
     #sabores .fila{
-        display: block;
+        display: block; /* Establece el modo de visualización en bloque */
     }
     #inicio header .contenido-header nav{
-        position: initial;
-        display: none;
-        transform: translate(0);
+        position: initial; /* Establece posición inicial */
+        display: none;     /* Oculta el elemento */
+        transform: translate(0); /* Restablece la transformación */
     }
     .nav-responsive{
-        display: block;
+        display: block;   /* Muestra el elemento */
     }
     #inicio header .contenido-header{
-        padding: 20px;
+        padding: 20px;    /* Añade relleno */
     }
 }
+
 /* Estilos para el modal */
 .modal {
-    display: none; /* Ocultar el modal por defecto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    display: none;       /* Oculta el modal por defecto */
+    position: fixed;     /* Establece posición fija */
+    top: 0;              /* Establece la posición superior a 0 */
+    left: 0;             /* Establece la posición izquierda a 0 */
+    width: 100%;         /* Establece el ancho al 100% */
+    height: 100%;        /* Establece la altura al 100% */
+    background-color: rgba(0, 0, 0, 0.7); /* Establece el color de fondo con transparencia */
 }
 
+/* Estilos para el contenido del modal */
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    padding: 30px; /* Aumentar el padding para hacer el modal más grande */
-    border: 1px solid #3b3b3b;
-    width: 90%; /* Aumentar el ancho del modal */
-    max-width: 500px; /* Aumentar el ancho máximo del modal */
-    text-align: center;
+    position: absolute;  /* Establece posición absoluta */
+    top: 50%;            /* Coloca el elemento a la mitad de la altura */
+    left: 50%;           /* Coloca el elemento a la mitad del ancho */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+    background-color: #fefefe; /* Establece el color de fondo */
+    padding: 30px;       /* Añade relleno */
+    border: 1px solid #3b3b3b; /* Establece un borde */
+    width: 90%;          /* Establece el ancho al 90% */
+    max-width: 500px;    /* Establece el ancho máximo */
+    text-align: center;  /* Centra el texto horizontalmente */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+    color: #aaa;         /* Establece el color del texto */
+    float: right;        /* Flota el elemento a la derecha */
+    font-size: 28px;     /* Establece el tamaño de la fuente */
+    font-weight: bold;   /* Establece el peso de la fuente */
+    cursor: pointer;     /* Cambia el cursor al pasar por encima */
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Estilos para el botón Aceptar */
+/* Estilos para el botón Aceptar dentro del modal */
 .modal-content button {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    padding: 10px 20px; /* Ajustar padding */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave */
+    background-color: black; /* Establece el color de fondo */
+    color: white;         /* Establece el color del texto */
+    padding: 10px 20px;   /* Añade relleno */
+    border: none;         /* Elimina el borde */
+    cursor: pointer;      /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Añade una transición suave */
 }
 
+/* Efecto de hover para el botón Aceptar */
 .modal-content button:hover {
-    background-color: orange; /* Fondo naranja al pasar el mouse */
+    background-color: orange; /* Cambia el color de fondo al pasar el mouse */
 }
 
-/* Estilos del pie de página */
+/* Estilos para el pie de página */
 footer {
-    background-color: #ff8f46;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ff8f46; /* Establece el color de fondo */
+    color: #fff;         /* Establece el color del texto */
+    padding: 20px 0;     /* Añade relleno */
 }
 
+/* Estilos para el contenido del pie de página */
 .contenido-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: flex;       /* Utiliza un modelo de caja flexible */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio */
 }
 
+/* Estilos para las secciones dentro del pie de página */
 .secciones {
-    flex: 1;
-    margin: 0 20px;
+    flex: 1;            /* Establece la flexibilidad */
+    margin: 0 20px;     /* Añade márgenes horizontales */
 }
 
+/* Estilos para los títulos de las secciones del pie de página */
 .secciones h3 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #fff; /* Establece un borde inferior */
+    padding-bottom: 10px; /* Añade relleno inferior */
 }
 
+/* Estilos para las listas dentro de las secciones del pie de página */
 .secciones ul {
-    list-style: none;
-    padding: 0;
+    list-style: none;   /* Elimina las viñetas */
+    padding: 0;         /* Elimina el relleno */
 }
 
+/* Estilos para los elementos de las listas dentro de las secciones del pie de página */
 .secciones ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Añade margen inferior */
 }
 
+/* Estilos para los enlaces dentro de las listas de las secciones del pie de página */
 .secciones ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff;        /* Establece el color del texto */
+    text-decoration: none; /* Elimina el subrayado */
 }
 
+/* Estilos para los derechos de autor en el pie de página */
 .derechos {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #fff;
-    padding-top: 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px;   /* Añade margen superior */
+    border-top: 1px solid #fff; /* Establece un borde superior */
+    padding-top: 20px;  /* Añade relleno superior */
 }
