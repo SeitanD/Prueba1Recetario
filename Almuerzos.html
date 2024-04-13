@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="almuerzo-estilo.css"> <!-- CSS externo -->
 </head>
 <body>
+    <!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <p>Funcion temporalmente fuera de servicio.</p>
+        <button onclick="cerrarModal()">Aceptar</button> <!-- Botón Aceptar -->
+    </div>
+</div>
+
+
+
     <!-- SECCION INICIO -->
     <section id="inicio">
         <header>
@@ -21,23 +32,35 @@
                 <nav id="nav"> <!-- Navegación -->
                     <ul>
                         <li>
-                            <a href="#inicio" onclick="seleccionar()">
+                            <a href="./index.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-house"></i> <!-- Icono de casa -->
                                 <span>Inicio</span> <!-- Texto de enlace -->
                             </a>
                         </li>
                         <li>
-                            <a href="#Recetas" onclick="seleccionar()">
+                            <a href="#" onclick="mostrarModal()">
                                 <i class="fa-solid fa-ice-cream"></i> <!-- Icono de helado -->
-                                <span>Recetas</span>
+                                <span>Postres</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="mostrarModal()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Comidas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <div class="social"> <!-- Redes sociales -->
-                    <a href="Login">Login</a> <!-- Enlace de login -->
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Icono de Instagram -->
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>  <!-- Icono de Twitter -->
+                    <a href="./login.html">Login</a> <!-- Enlace de login -->
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> <!-- Icono de Instagram -->
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>  <!-- Icono de Twitter -->
                 </div>
                 <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i> <!-- Icono de menú -->
@@ -68,6 +91,7 @@
 
     <!-- Recetas -->
     <section id="Recetas">
+        <br>
         <h2>Crema de vegetales asados</h2>
         <div class="fila">
             <div class="item">
@@ -95,6 +119,7 @@
                                 <li>Procesa los vegetales con cilantro, jengibre y ajo.</li>
                                 <li>Calienta los vegetales procesados en una olla, añadiendo agua o caldo si es necesario.</li>
                                 <li>Sirve en un plato y añade pimienta y hojas verdes.</li>
+                                <br>
                               
                             </ul>
                         </p>
@@ -103,7 +128,12 @@
             </div>
         </div>
     </section>
-
+       <!-- Pie de página -->
+       <footer>
+        <div class="derechos">
+            <p>© 2024 Q'RICO - Todos los derechos reservados</p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
 </body>

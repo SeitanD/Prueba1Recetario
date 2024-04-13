@@ -81,3 +81,46 @@ button:hover {
     text-align: center;
     margin-top: 20px;
 }
+/* Estilos del pie de página */
+footer {
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.secciones {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.secciones h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.secciones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.secciones ul li {
+    margin-bottom: 5px;
+}
+
+.secciones ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.derechos {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
