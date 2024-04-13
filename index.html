@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q'RICO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilos adicionales para las tarjetas */
+        .card {
+            margin: 10px; /* Añadir un pequeño margen */
+        }
+    </style>
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo"> <!-- Logotipo -->
+                    <h1>Q'RICO</h1> <!-- Texto del logotipo -->
+                </div>
+                <nav id="nav"> <!-- Navegación -->
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i> <!-- Icono de casa -->
+                                <span>Inicio</span> <!-- Texto de enlace -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Recetas" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i> <!-- Icono de helado -->
+                                <span>Recetas</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social"> <!-- Redes sociales -->
+                    <a href="Login">Login</a> <!-- Enlace de login -->
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Icono de Instagram -->
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>  <!-- Icono de Twitter -->
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i> <!-- Icono de menú -->
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/1.jpg" alt=""> <!-- Imagen 1 -->
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/2.jpg" alt=""> <!-- Imagen 2 -->
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/3.jpg" alt=""> <!-- Imagen 3 -->
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/4.jpg" alt=""> <!-- Imagen 4 -->
+                </div>
+            </div>
+            <div class="info">
+                <h2>Comida Saludable </h2> <!-- Título del carrusel -->
+            </div>
+        </div>
+    </section>
+
+    <!-- comidas -->
+    <section id="Comidas">
+        <h2>¿Algún antojo?</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="card">
+                    <img src="img/sabor1.png" alt="">
+                    <div class="info">
+                        <h3>Desayunos</h3>
+                        <p>Para empezar tu día!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="img/sabor2.png" alt="">
+                    <div class="info">
+                        <h3>Almuerzos</h3>
+                        <p>¿Algo contundente y saludable?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="img/sabor3.png" alt="">
+                    <div class="info">
+                        <h3>Cenas</h3>
+                        <p>Algo rico antes de dormir!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
