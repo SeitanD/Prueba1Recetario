@@ -1,0 +1,182 @@
+body {
+    text-align: center; /* Centrar el contenido del body */
+}
+
+#inicio {
+    text-align: auto; /* Alinear el texto de la sección inicio a la izquierda */
+}
+
+#Recetas {
+    text-align: auto; /* Alinear el texto de la sección Recetas a la izquierda */
+}
+
+.card img {
+    margin: 0 auto; /* Centrar la imagen dentro de la tarjeta */
+}
+
+.info {
+    text-align: auto; /* Alinear el texto de la clase info a la izquierda */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #ff8f46; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    padding: 20px 0; /* Padding superior e inferior del footer */
+}
+
+.contenido-footer {
+    display: flex; /* Usar flexbox para el contenido del footer */
+    justify-content: space-around; /* Distribuir el espacio alrededor de los elementos */
+    align-items: flex-start; /* Alinear los elementos al inicio */
+}
+
+.secciones {
+    flex: 1; /* Cada sección ocupa el mismo espacio dentro del flexbox */
+    margin: 0 20px; /* Margen a los lados de las secciones */
+}
+
+.secciones h3 {
+    border-bottom: 2px solid #fff; /* Borde inferior para los títulos de las secciones */
+    padding-bottom: 10px; /* Padding inferior para los títulos de las secciones */
+}
+
+.secciones ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding de la lista */
+}
+
+.secciones ul li {
+    margin-bottom: 5px; /* Margen inferior para los elementos de la lista */
+}
+
+.secciones ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+.derechos {
+    text-align: center; /* Alinear el texto de derechos al centro */
+    margin-top: 20px; /* Margen superior para los derechos */
+    border-top: 1px solid #fff; /* Borde superior para los derechos */
+    padding-top: 20px; /* Padding superior para los derechos */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posición fija */
+    top: 0; /* Desde el borde superior */
+    left: 0; /* Desde el borde izquierdo */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Desde el centro vertical */
+    left: 50%; /* Desde el centro horizontal */
+    transform: translate(-50%, -50%); /* Centrar el modal */
+    background-color: #fefefe; /* Color de fondo del modal */
+    padding: 30px; /* Padding interior del modal */
+    border: 1px solid #3b3b3b; /* Borde del modal */
+    width: 90%; /* Ancho del modal */
+    max-width: 500px; /* Ancho máximo del modal */
+    text-align: center; /* Alinear texto al centro del modal */
+}
+
+.close {
+    color: #aaa; /* Color del texto del botón cerrar */
+    float: right; /* Flotar a la derecha */
+    font-size: 28px; /* Tamaño de fuente del botón cerrar */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambio de color al pasar el mouse o enfocar */
+    text-decoration: none; /* Eliminar subrayado */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para el botón Aceptar del modal */
+.modal-content button {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Padding del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.modal-content button:hover {
+    background-color: orange; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para las páginas individuales de recetas */
+.contenedor-receta {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Padding del contenedor */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.contenedor-receta h1 {
+    font-size: 2em; /* Tamaño de fuente para el título principal */
+    margin-bottom: 20px; /* Margen inferior del título */
+}
+
+.contenedor-receta img {
+    width: 100%; /* Imagen toma el 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 20px; /* Margen inferior de la imagen */
+}
+
+.contenedor-receta h2 {
+    font-size: 1.5em; /* Tamaño de fuente para los subtítulos */
+    margin-top: 20px; /* Margen superior de los subtítulos */
+    margin-bottom: 10px; /* Margen inferior de los subtítulos */
+}
+
+.contenedor-receta ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding-left: 0; /* Eliminar padding a la izquierda */
+}
+
+.contenedor-receta ul li {
+    margin-bottom: 10px; /* Margen inferior de los elementos de la lista */
+    padding-left: 20px; /* Padding a la izquierda para los elementos de la lista */
+    position: relative; /* Posición relativa para los elementos de la lista */
+}
+
+.contenedor-receta ul li::before {
+    content: "\2022"; /* Carácter de punto para los elementos de la lista */
+    color: #ff8f46; /* Color del punto */
+    position: absolute; /* Posición absoluta del punto */
+    left: 0; /* Alinear el punto a la izquierda */
+}
+
+.contenedor-receta ol {
+    padding-left: 20px; /* Padding a la izquierda para la lista ordenada */
+}
+
+.contenedor-receta ol li {
+    margin-bottom: 10px; /* Margen inferior de los elementos de la lista ordenada */
+}
+
+.contenedor-receta a {
+    display: inline-block; /* Mostrar el enlace como un bloque en línea */
+    margin-top: 20px; /* Margen superior para el enlace */
+    padding: 10px 20px; /* Padding del enlace */
+    background-color: #ff8f46; /* Color de fondo del enlace */
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.contenedor-receta a:hover {
+    background-color: #e07b3e; /* Cambio de color al pasar el mouse */
+}
