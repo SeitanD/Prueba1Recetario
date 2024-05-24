@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form-registro'); // Obtener el formulario de registro
     const mensaje = document.getElementById('mensaje'); // Obtener el elemento de mensaje de error
+    const registroExitosoModal = document.getElementById('registroExitosoModal'); // Obtener el modal de registro exitoso
 
     form.addEventListener('submit', (e) => { // Agregar un evento de escucha para el envío del formulario
         e.preventDefault(); // Prevenir el envío predeterminado del formulario
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Expresiones regulares para validar el nombre y el número de teléfono
         const patronNombre = /^[a-zA-Z\s]+$/;
-        const patronTelefono = /^\d{10}$/; // Asume un número de teléfono de 10 dígitos
+        const patronTelefono = /^\d{09}$/; // Asume un número de teléfono de 10 dígitos
 
         // Validar el nombre con la expresión regular
         if (!patronNombre.test(nombre)) {
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Validar el número de teléfono con la expresión regular
         if (!patronTelefono.test(telefono)) {
-            mensaje.textContent = 'Ingrese un número de teléfono válido (10 dígitos)';
+            mensaje.textContent = 'Ingrese un número de teléfono válido (09 dígitos)';
             return;
         }
 
@@ -57,5 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         mensaje.textContent = 'Registro exitoso';
         $('#registroExitosoModal').modal('show'); // Mostrar el modal de registro exitoso
         form.reset(); // Restablecer el formulario después del registro exitoso
+    });
+
+    // Agregar un evento de escucha para el evento de cierre del modal de registro exitoso
+    registroExitosoModal.addEventListener('hidden.bs.modal', function () {
+        // Redireccionar al usuario al índice (index.html)
+        window.location.href = 'index.html';
     });
 });
