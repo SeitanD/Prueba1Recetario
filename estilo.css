@@ -1,22 +1,22 @@
 /* Establece reglas para todos los elementos del documento */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand'; /* Establece la fuente para todo el documento */
 }
 
-html{
+html {
     scroll-behavior: smooth; /* Añade un desplazamiento suave al hacer clic en enlaces internos */
 }
 
 /* SECCION INICIO */
-#inicio{
+#inicio {
     height: 100vh; /* Establece la altura al 100% del viewport */
     display: flex;
     flex-direction: column; /* Organiza los elementos en columna */
 }
 
-#inicio header .contenido-header{
+#inicio header .contenido-header {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -26,44 +26,44 @@ html{
     position: relative;
 }
 
-#inicio header .contenido-header nav{
+#inicio header .contenido-header nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#inicio header .contenido-header nav ul{
+#inicio header .contenido-header nav ul {
     display: flex;
     list-style: none;
 }
 
-#inicio header .contenido-header .logo{
+#inicio header .contenido-header .logo {
     color: #ff8f46;
     font-size: 22px;
 }
 
-#inicio header .contenido-header nav ul li{
+#inicio header .contenido-header nav ul li {
     text-align: center;
 }
 
-#inicio header .contenido-header nav ul li i{
+#inicio header .contenido-header nav ul li i {
     display: block;
     color: #a8a8a8;
     margin-bottom: 10px;
 }
 
-#inicio header .contenido-header nav ul li a{
+#inicio header .contenido-header nav ul li a {
     display: block;
     text-decoration: none;
-    color:#a8a8a8;
+    color: #a8a8a8;
     margin: 0px 20px;
 }
 
-#inicio header .contenido-header nav ul li:hover i{
+#inicio header .contenido-header nav ul li:hover i {
     color: #ff8f46;
 }
 
-#inicio header .contenido-header .social a{
+#inicio header .contenido-header .social a {
     display: inline-block;
     background-color: #ff8f46;
     text-decoration: none;
@@ -72,44 +72,44 @@ html{
     border-radius: 30px;
 }
 
-#inicio header .contenido-header .social > i{
+#inicio header .contenido-header .social > i {
     display: inline-block;
     color: #a8a8a8;
     margin-left: 10px;
 }
 
-.nav-responsive{
+.nav-responsive {
     display: none;
     font-size: 25px;
     color: #a8a8a8;
 }
 
 /* Carrusel */
-#inicio .carrusel{
+#inicio .carrusel {
     position: relative;
     height: 100%;
 }
 
-#inicio .carrusel .info{
+#inicio .carrusel .info {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 50%;
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-#inicio .carrusel .info h2{
+#inicio .carrusel .info h2 {
     font-size: 70px; /* Aumenta el tamaño del texto */
     margin-bottom: 20px;
 }
 
-#inicio .carrusel .info button{
+#inicio .carrusel .info button {
     display: inline-block;
     margin-top: 30px;
     font-size: 50px;
-    border:none;
+    border: none;
     background-color: #f1a239;
     color: #ffffff;
     padding: 7px 25px;
@@ -128,7 +128,7 @@ html{
     height: 100%;
 }
 
-#inicio .gallery-cell img{
+#inicio .gallery-cell img {
     display: block;
     width: 100vw;
     height: 100vh;
@@ -136,49 +136,58 @@ html{
 }
 
 /* SECCION COMIDAS */
-#Comidas{
+#Comidas {
     padding: 50px 0;
 }
 
-#Comidas h2{
+#Comidas h2 {
     text-align: center;
     font-weight: bold;
     font-size: 50px; /* Aumenta el tamaño del título */
 }
 
-#Comidas .fila{
-    display: CENTER;
+#Comidas .fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: auto;
 }
 
-#Comidas .fila .item img{
-    max-width: 80px;
-}
-
-#Comidas .fila .item{
+#Comidas .fila .item {
     display: flex;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 10px;
     padding: 5px;
 }
 
-#Comidas .fila .item:hover{
-    background-color:#ff8f46
+#Comidas .fila .item .card {
+    width: 18rem;
+    transition: transform 0.2s;
 }
 
-#Comidas .fila .item .info{
-    margin-left: 15px;
-    font-size: 14px;
+#Comidas .fila .item .card:hover {
+    transform: scale(1.05);
 }
 
-#Comidas button{
+#Comidas .fila .item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#Comidas .fila .item .card-body {
+    text-align: center;
+}
+
+#Comidas button {
     display: block;
     width: fit-content;
     margin: auto;
     margin-top: 20px;
     font-size: 20px;
-    border:none;
+    border: none;
     background-color: #ff8f46;
     color: #fff;
     padding: 7px 25px;
@@ -186,83 +195,45 @@ html{
     cursor: pointer;
 }
 
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .derechos {
+    margin: 0;
+}
+
 /* SECCION RESPONSIVE */
-@media screen and (max-width:1070px) {
-    #inicio header .contenido-header .social{
+@media screen and (max-width: 1070px) {
+    #inicio header .contenido-header .social {
         display: none;
     }
-    #inicio header .contenido-header nav{
+    #inicio header .contenido-header nav {
         position: static;
         transform: translateX(0);
     }
 }
 
-@media screen and (max-width:700px) {
-    #sabores .fila{
+@media screen and (max-width: 700px) {
+    #sabores .fila {
         display: block;
     }
-    #inicio header .contenido-header nav{
+    #inicio header .contenido-header nav {
         position: initial;
         display: none;
         transform: translate(0);
     }
-    .nav-responsive{
+    .nav-responsive {
         display: block;
     }
-    #inicio header .contenido-header{
+    #inicio header .contenido-header {
         padding: 20px;
     }
 }
-/* Estilos para el modal */
-.modal {
-    display: none; /* Ocultar el modal por defecto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    padding: 30px; /* Aumentar el padding para hacer el modal más grande */
-    border: 1px solid #3b3b3b;
-    width: 90%; /* Aumentar el ancho del modal */
-    max-width: 500px; /* Aumentar el ancho máximo del modal */
-    text-align: center;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Estilos para el botón Aceptar */
-.modal-content button {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    padding: 10px 20px; /* Ajustar padding */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave */
-}
-
-.modal-content button:hover {
-    background-color: orange; /* Fondo naranja al pasar el mouse */
-}
-
