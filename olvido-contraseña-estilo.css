@@ -1,3 +1,4 @@
+/* Estilos generales para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Estilos para el encabezado */
 header {
     background-color: #ff8f46;
     color: #fff;
@@ -12,6 +14,7 @@ header {
     text-align: center;
 }
 
+/* Estilos para el contenido del encabezado */
 .contenido-header {
     display: flex;
     justify-content: space-between;
@@ -19,19 +22,22 @@ header {
     padding: 0 20px;
 }
 
+/* Estilo para el enlace del logo */
 #logo {
-    color: black;
-    text-decoration: none;
+    color: black; /* Color negro para el texto del logo */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 #logo:hover {
-    color: black;
+    color: black; /* Mantén el color negro incluso cuando se pasa el cursor sobre el enlace */
 }
 
+/* Estilos para el texto del logo */
 .logo h1 {
     margin: 0;
 }
 
+/* Estilos para el formulario de restablecimiento de contraseña */
 .formulario {
     max-width: 400px;
     margin: 50px auto;
@@ -41,11 +47,13 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Estilos para los campos del formulario */
 .campo {
     margin-bottom: 20px;
     position: relative;
 }
 
+/* Estilos para los íconos dentro de los campos */
 .campo i {
     position: absolute;
     top: 50%;
@@ -54,6 +62,7 @@ header {
     color: #888;
 }
 
+/* Estilos para los campos de entrada */
 input {
     padding: 10px;
     padding-left: 30px;
@@ -62,7 +71,8 @@ input {
     border-radius: 3px;
 }
 
-button {
+/* Estilos para el botón de enviar y el botón del modal */
+.boton {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -72,10 +82,11 @@ button {
     width: 100%;
 }
 
-button:hover {
+.boton:hover {
     background-color: #ff8f46;
 }
 
+/* Estilos para el mensaje de error o información */
 #mensaje {
     color: red;
     text-align: center;

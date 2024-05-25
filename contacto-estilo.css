@@ -93,3 +93,43 @@ button:hover {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Estilos para el modal de confirmación */
+.modal {
+    display: none; /* Escondido por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* En frente de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilitar desplazamiento si es necesario */
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.4); /* Color de fondo con opacidad */
+}
+
+/* Contenido del modal */
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del 80% */
+    max-width: 300px; /* Ancho máximo */
+    text-align: center; /* Centrar el texto */
+    border-radius: 5px;
+}
+
+#cerrar-modal {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#cerrar-modal:hover {
+    background-color: #ff8f46;
+}

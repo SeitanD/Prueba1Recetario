@@ -181,18 +181,24 @@ html {
     text-align: center;
 }
 
-#Comidas button {
+/* Estilos para los botones dentro de las tarjetas */
+#Comidas button, #Comidas .btn-primary {
     display: block;
     width: fit-content;
     margin: auto;
     margin-top: 20px;
     font-size: 20px;
     border: none;
-    background-color: #ff8f46;
+    background-color: #333;
     color: #fff;
     padding: 7px 25px;
     border-radius: 30px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Comidas button:hover, #Comidas .btn-primary:hover {
+    background-color: #ff8f46;
 }
 
 /* Pie de página */
