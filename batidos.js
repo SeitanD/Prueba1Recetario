@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Función para mostrar u ocultar el menú
     function mostrarOcultarMenu() {
-        var nav = $('#nav');
+        var nav = $('nav');
         if (nav.css('display') === 'none' || nav.css('display') === '') {
             nav.css('display', 'block');
         } else {
@@ -24,7 +24,7 @@ $(document).ready(function() {
         // URL de la API de The Cocktail DB para obtener bebidas no alcohólicas
         var apiURL = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic';
 
-        // Realizar la solicitud a la API
+        // Realizar la solicitud a la API y se almacena en la variable llamada data del metodo fetch
         fetch(apiURL)
             .then(response => response.json())
             .then(data => {
