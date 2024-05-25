@@ -6,13 +6,17 @@ function getAperitivos() {
     // Realizar la solicitud a la API
     fetch(apiURL)
         .then(response => {
+            // Verificar si la respuesta de la API es exitosa
             if (!response.ok) {
                 throw new Error('La solicitud no fue exitosa. Código: ' + response.status);
             }
+            // Convertir la respuesta a JSON
             return response.json();
         })
         .then(data => {
-            console.log('Datos recibidos:', data); // Imprimir los datos en la consola para depuración
+            // Imprimir los datos en la consola para depuración
+            console.log('Datos recibidos:', data);
+            // Verificar si se obtuvieron datos y procesarlos
             if (data && data.meals) {
                 // Si se obtienen datos de la API, procesar y mostrar las recetas
                 mostrarRecetas(data.meals);
@@ -30,7 +34,9 @@ function getAperitivos() {
 
 // Función para mostrar las recetas de aperitivos en tarjetas HTML
 function mostrarRecetas(recetas) {
+    // Crear una variable para almacenar el HTML de las recetas
     var recetasHTML = '';
+    // Iterar sobre cada receta y generar el HTML correspondiente
     recetas.forEach(function(receta) {
         recetasHTML += `
             <div class="col-md-4 mb-4">
@@ -53,6 +59,7 @@ function mostrarRecetas(recetas) {
 
 // Función para mostrar mensajes de error o información en caso de problemas
 function mostrarMensaje(mensaje) {
+    // Mostrar el mensaje dentro del contenedor de recetas
     document.getElementById('recetas-dinamicas').innerHTML = `<p>${mensaje}</p>`;
 }
 

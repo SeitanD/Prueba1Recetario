@@ -7,9 +7,11 @@ $(document).ready(function() {
 
     // Función para obtener y mostrar recetas
     function getRecipes() {
+        // Iterar para obtener el número deseado de recetas
         for (var i = 0; i < numRecipes; i++) {
+            // Realizar una solicitud GET a la API para obtener una receta aleatoria
             $.get(apiURL, function(data) {
-                // Iterar sobre las recetas obtenidas
+                // Iterar sobre las recetas obtenidas en la respuesta
                 data.meals.forEach(function(recipe) {
                     // Crear una tarjeta de receta con la información obtenida
                     var recipeCard = `
@@ -39,7 +41,9 @@ $(document).ready(function() {
 
     // Evento de clic en el botón "Ver Receta"
     $(document).on('click', '.btn-show-recipe', function() {
+        // Obtener el contenido de la receta asociado al botón clicado
         var recipeContent = $(this).siblings('.recipe-content');
+        // Alternar la visibilidad del contenido de la receta
         if (recipeContent.is(':visible')) {
             recipeContent.slideUp();
         } else {
