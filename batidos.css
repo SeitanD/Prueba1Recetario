@@ -1,19 +1,17 @@
-/* Establece reglas para todos los elementos del documento */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand'; /* Establece la fuente para todo el documento */
+    font-family: 'Quicksand';
 }
 
 html {
-    scroll-behavior: smooth; /* Añade un desplazamiento suave al hacer clic en enlaces internos */
+    scroll-behavior: smooth;
 }
 
-/* SECCION INICIO */
 #inicio {
-    height: 100vh; /* Establece la altura al 100% del viewport */
+    height: 100vh;
     display: flex;
-    flex-direction: column; /* Organiza los elementos en columna */
+    flex-direction: column;
 }
 
 #inicio header .contenido-header {
@@ -40,10 +38,6 @@ html {
 #inicio header .contenido-header .logo {
     color: #ff8f46;
     font-size: 22px;
-}
-
-#inicio header .contenido-header nav ul li {
-    text-align: center;
 }
 
 #inicio header .contenido-header nav ul li i {
@@ -84,7 +78,6 @@ html {
     color: #a8a8a8;
 }
 
-/* Carrusel */
 #inicio .carrusel {
     position: relative;
     height: 100%;
@@ -101,7 +94,7 @@ html {
 }
 
 #inicio .carrusel .info h2 {
-    font-size: 70px; /* Aumenta el tamaño del texto */
+    font-size: 70px;
     margin-bottom: 20px;
 }
 
@@ -135,7 +128,6 @@ html {
     object-fit: cover;
 }
 
-/* SECCION COMIDAS */
 #Comidas {
     padding: 50px 0;
 }
@@ -143,42 +135,33 @@ html {
 #Comidas h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 50px; /* Aumenta el tamaño del título */
+    font-size: 50px;
 }
 
 #Comidas .fila {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: CENTER;
     max-width: 1100px;
     margin: auto;
 }
 
+#Comidas .fila .item img {
+    max-width: 80px;
+}
+
 #Comidas .fila .item {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin: 20px 10px;
     padding: 5px;
 }
 
-#Comidas .fila .item .card {
-    width: 18rem;
-    transition: transform 0.2s;
+#Comidas .fila .item:hover {
+    background-color: #ff8f46;
 }
 
-#Comidas .fila .item .card:hover {
-    transform: scale(1.05);
-}
-
-#Comidas .fila .item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-#Comidas .fila .item .card-body {
-    text-align: center;
+#Comidas .fila .item .info {
+    margin-left: 15px;
+    font-size: 14px;
 }
 
 #Comidas button {
@@ -195,26 +178,11 @@ html {
     cursor: pointer;
 }
 
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer .derechos {
-    margin: 0;
-}
-
-/* SECCION RESPONSIVE */
 @media screen and (max-width: 1070px) {
     #inicio header .contenido-header .social {
         display: none;
     }
+
     #inicio header .contenido-header nav {
         position: static;
         transform: translateX(0);
@@ -225,15 +193,31 @@ footer .derechos {
     #sabores .fila {
         display: block;
     }
+
     #inicio header .contenido-header nav {
         position: initial;
         display: none;
         transform: translate(0);
     }
+
     .nav-responsive {
         display: block;
     }
+
     #inicio header .contenido-header {
         padding: 20px;
     }
+}
+
+footer {
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.derechos {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
 }

@@ -37,7 +37,7 @@ header {
     margin: 0;
 }
 
-/* Estilos para el formulario de registro */
+/* Estilos para el formulario de inicio de sesión */
 .formulario {
     max-width: 400px;
     margin: 50px auto;
@@ -91,19 +91,4 @@ button:hover {
     color: red;
     text-align: center;
     margin-top: 20px;
-}
-
-/* Estilos para las opciones adicionales */
-.opciones {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.opciones a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.opciones a:hover {
-    text-decoration: underline;
 }
