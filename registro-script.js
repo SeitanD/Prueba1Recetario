@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Expresiones regulares para validar el nombre y el número de teléfono
         const patronNombre = /^[a-zA-Z\s]+$/;
-        const patronTelefono = /^\d{09}$/; // Asume un número de teléfono de 10 dígitos
+        const patronTelefono = /^\d{09}$/; // Asume un número de teléfono de 09 dígitos
 
         // Validar el nombre con la expresión regular
         if (!patronNombre.test(nombre)) {
