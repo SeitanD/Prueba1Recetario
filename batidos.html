@@ -44,7 +44,7 @@
                         <li>
                             <a href="./batidos.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-glass-water"></i>
-                                <span>Batidos</span>
+                                <span>Refrescos</span>
                             </a>
                         </li>
                         <li>
@@ -69,27 +69,27 @@
         <div class="carrusel">
             <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true }'>
                 <div class="gallery-cell">
-                    <img src="img/saludable1.jpg" alt="Batido 1">
+                    <img src="img/batido1.jpg" alt="Batido 1">
                 </div>
                 <div class="gallery-cell">
-                    <img src="img/saludable2.jpg" alt="Batido 2">
+                    <img src="img/batido2.jpg" alt="Batido 2">
                 </div>
                 <div class="gallery-cell">
-                    <img src="img/saludable3.jpg" alt="Batido 3">
+                    <img src="img/batido3.jpg" alt="Batido 3">
                 </div>
                 <div class="gallery-cell">
-                    <img src="img/saludable4.jpg" alt="Batido 4">
+                    <img src="img/batido4.jpg" alt="Batido 4">
                 </div>
             </div>
             <div class="info">
-                <h2>Batidos</h2>
+                <h2>Resfresca tu dia</h2>
             </div>
         </div>
     </section>
 
     <!-- Sección de Recetas -->
     <section id="Recetas" class="container my-4">
-        <h2 class="text-center mb-4">Recetas de Batidos</h2>
+        <h2 class="text-center mb-4">Recetas de Refrescos</h2>
         <div class="row">
             <!-- Tarjeta 1 -->
             <div class="col-md-4 mb-4">
@@ -98,6 +98,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Batido de fresa</h5>
                         <p class="card-text">Refrescante batido de fresas frescas.</p>
+                        <p class="card-text"><strong>Ingredientes:</strong> fresas, leche, azúcar.</p>
+                        <p class="card-text"><strong>Instrucciones:</strong> Mezcla todos los ingredientes en una licuadora y bate hasta obtener una mezcla suave. Sirve frío.</p>
                     </div>
                 </div>
             </div>
@@ -108,6 +110,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Batido de plátano</h5>
                         <p class="card-text">Delicioso batido de plátano y leche.</p>
+                        <p class="card-text"><strong>Ingredientes:</strong> plátanos, leche, miel.</p>
+                        <p class="card-text"><strong>Instrucciones:</strong> Mezcla todos los ingredientes en una licuadora hasta obtener una mezcla homogénea. Sirve frío.</p>
                     </div>
                 </div>
             </div>
@@ -118,6 +122,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Batido de mango</h5>
                         <p class="card-text">Exótico batido de mango tropical.</p>
+                        <p class="card-text"><strong>Ingredientes:</strong> mangos, yogur, miel.</p>
+                        <p class="card-text"><strong>Instrucciones:</strong> Licua todos los ingredientes hasta que la mezcla esté suave. Sirve inmediatamente.</p>
                     </div>
                 </div>
             </div>
@@ -128,6 +134,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Batido verde</h5>
                         <p class="card-text">Saludable batido verde con espinacas y manzana.</p>
+                        <p class="card-text"><strong>Ingredientes:</strong> espinacas, manzana, plátano, agua.</p>
+                        <p class="card-text"><strong>Instrucciones:</strong> Mezcla todos los ingredientes en una licuadora y procesa hasta obtener una mezcla homogénea. Sirve frío.</p>
                     </div>
                 </div>
             </div>
@@ -138,6 +146,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Batido de chocolate</h5>
                         <p class="card-text">Delicioso batido de chocolate con leche.</p>
+                        <p class="card-text"><strong>Ingredientes:</strong> leche, cacao en polvo, azúcar.</p>
+                        <p class="card-text"><strong>Instrucciones:</strong> Mezcla todos los ingredientes en una licuadora hasta obtener una mezcla suave. Sirve frío.</p>
                     </div>
                 </div>
             </div>
@@ -148,6 +158,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Batido de frambuesa</h5>
                         <p class="card-text">Refrescante batido de frambuesa con yogur.</p>
+                        <p class="card-text"><strong>Ingredientes:</strong> frambuesas, yogur, miel.</p>
+                        <p class="card-text"><strong>Instrucciones:</strong> Mezcla todos los ingredientes en una licuadora hasta obtener una mezcla homogénea. Sirve frío.</p>
                     </div>
                 </div>
             </div>
@@ -162,5 +174,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="batidos.js"></script>
+    <!-- Script para el efecto hover con jQuery -->
+    <script>
+        $(document).ready(function(){
+            // Añadir efecto hover a las tarjetas una vez que se han añadido dinámicamente
+            $(document).on('mouseenter', '.card', function() {
+                $(this).css('transform', 'scale(1.05)');
+            }).on('mouseleave', '.card', function() {
+                $(this).css('transform', 'scale(1)');
+            });
+        });
+    </script>
 </body>
 </html>

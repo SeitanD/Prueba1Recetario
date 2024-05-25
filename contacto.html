@@ -42,6 +42,20 @@
                     <!-- Input para el correo electrónico -->
                     <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
                 </div>
+                <!-- Campo para el teléfono -->
+                <div class="campo">
+                    <!-- Icono de teléfono -->
+                    <i class="fa-solid fa-phone"></i>
+                    <!-- Input para el teléfono -->
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <!-- Campo para el asunto -->
+                <div class="campo">
+                    <!-- Icono de asunto -->
+                    <i class="fa-solid fa-tag"></i>
+                    <!-- Input para el asunto -->
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                </div>
                 <!-- Campo para el mensaje -->
                 <div class="campo">
                     <!-- Icono de mensaje -->
@@ -56,6 +70,14 @@
             <p id="respuesta"></p>
         </div>
     </section>
+
+    <!-- Modal de confirmación -->
+    <div id="modal-confirmacion" class="modal">
+        <div class="modal-contenido">
+            <p>Mensaje enviado con éxito</p>
+            <button id="cerrar-modal">Aceptar</button>
+        </div>
+    </div>
 
     <!-- Script para manejar la lógica del formulario -->
     <script src="contacto-script.js"></script>
