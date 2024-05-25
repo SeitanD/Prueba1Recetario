@@ -107,5 +107,16 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="comida.js"></script> <!-- Custom script -->
+    <!-- Script para el efecto hover con jQuery -->
+    <script>
+        $(document).ready(function(){
+            // Añadir efecto hover a las tarjetas una vez que se han añadido dinámicamente
+            $(document).on('mouseenter', '.card', function() {
+                $(this).css('transform', 'scale(1.05)');
+            }).on('mouseleave', '.card', function() {
+                $(this).css('transform', 'scale(1)');
+            });
+        });
+    </script>
 </body>
 </html>

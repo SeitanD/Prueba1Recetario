@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return patronEmail.test(email);
     }
 
-    // Redireccionar al index.html al cerrar el modal
-    document.getElementById('restablecerModal').addEventListener('hidden.bs.modal', function () {
-        window.location.href = 'login.html';
-    });
+ // Redireccionar al index.html al cerrar el modal
+ $('#restablecerModal').on('hidden.bs.modal', function () {
+    window.location.href = 'login.html';
+});
 });

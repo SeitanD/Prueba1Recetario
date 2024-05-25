@@ -25,6 +25,9 @@
     
     <!-- Estilos personalizados del sitio -->
     <link rel="stylesheet" href="estilo.css">
+    
+    <!-- Incluir la biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7O2l7e/Dc3V/J4G/ZR5gE5ydz7FAW8cfQ/9" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Sección principal de la página -->
@@ -109,11 +112,8 @@
     <!-- Título de la sección -->
     <h2>¿No sabes que comer?</h2>
     <h2>Te invitamos a revisar nuestras recetas saludables...</h2>
-    
-    <!-- Contenedor de tarjetas de comidas -->
+        <!-- Contenedor de tarjetas de comidas -->
     <div class="fila">
-        
-        
         <!-- Tarjeta de Aperitivos -->
         <div class="item">
             <a href="./Aperitivos.html" class="card-link">
@@ -158,8 +158,7 @@
 </section>
 
 <!-- Pie de página -->
- <!-- Pie de página -->
- <footer>
+<footer>
     <div class="derechos">
         <p>© 2024 Q'RICO - Todos los derechos reservados</p> <!-- Texto de derechos de autor -->
     </div>
@@ -170,6 +169,23 @@
 
 <!-- Script personalizado para interacciones adicionales -->
 <script src="script.js"></script>
+
+<!-- Script para el efecto hover con jQuery -->
+<script>
+$(document).ready(function(){
+    // Seleccionar todas las tarjetas y añadir el efecto hover
+    $('.card').hover(
+        function() {
+            // Cuando el mouse está sobre la tarjeta
+            $(this).css('transform', 'scale(1.05)');
+        },
+        function() {
+            // Cuando el mouse deja la tarjeta
+            $(this).css('transform', 'scale(1)');
+        }
+    );
+});
+</script>
 
 </body>
 </html>

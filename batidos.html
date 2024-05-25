@@ -174,5 +174,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="batidos.js"></script>
+    <!-- Script para el efecto hover con jQuery -->
+    <script>
+        $(document).ready(function(){
+            // Añadir efecto hover a las tarjetas una vez que se han añadido dinámicamente
+            $(document).on('mouseenter', '.card', function() {
+                $(this).css('transform', 'scale(1.05)');
+            }).on('mouseleave', '.card', function() {
+                $(this).css('transform', 'scale(1)');
+            });
+        });
+    </script>
 </body>
 </html>
