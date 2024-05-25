@@ -1,35 +1,62 @@
-$(document).ready(function() {
-    // Función que oculta o muestra el menú
-    function mostrarOcultarMenu() {
-        var nav = $('#nav');
-        if (nav.css('display') === 'none' || nav.css('display') === '') {
-            nav.css('display', 'block');
-        } else {
-            nav.css('display', 'none');
-        }
-    }
+// Función para obtener y mostrar recetas de aperitivos
+function getAperitivos() {
+    // URL de la API de TheMealDB para obtener recetas de aperitivos
+    var apiURL = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Appetizer';
 
-    // Mostrar/Ocultar el menú en dispositivos móviles
-    $('#bar').click(function() {
-        mostrarOcultarMenu();
+    // Realizar la solicitud a la API
+    fetch(apiURL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('La solicitud no fue exitosa. Código: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Datos recibidos:', data); // Imprimir los datos en la consola para depuración
+            if (data && data.meals) {
+                // Si se obtienen datos de la API, procesar y mostrar las recetas
+                mostrarRecetas(data.meals);
+            } else {
+                // Manejar la situación donde no se encuentran recetas
+                mostrarMensaje('No se encontraron recetas de aperitivos.');
+            }
+        })
+        .catch(error => {
+            // Manejar errores de la solicitud
+            console.error('Error al obtener las recetas de aperitivos:', error);
+            mostrarMensaje('Ocurrió un error al obtener las recetas de aperitivos.');
+        });
+}
+
+// Función para mostrar las recetas de aperitivos en tarjetas HTML
+function mostrarRecetas(recetas) {
+    var recetasHTML = '';
+    recetas.forEach(function(receta) {
+        recetasHTML += `
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="${receta.strMealThumb}" class="card-img-top" alt="${receta.strMeal}">
+                    <div class="card-body">
+                        <h5 class="card-title">${receta.strMeal}</h5>
+                        <p class="card-text">${receta.strInstructions.slice(0, 100)}...</p>
+                        <button class="btn btn-primary btn-show-recipe">Ver Receta</button>
+                        <div class="recipe-content" style="display: none;">
+                            <p>${receta.strInstructions}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
     });
+    // Agregar las tarjetas de recetas al contenedor en el HTML
+    document.getElementById('recetas-dinamicas').innerHTML = recetasHTML;
+}
 
-    // Seleccionar una opción del menú
-    function seleccionar() {
-        $('#nav').css('display', 'none');
-    }
+// Función para mostrar mensajes de error o información en caso de problemas
+function mostrarMensaje(mensaje) {
+    document.getElementById('recetas-dinamicas').innerHTML = `<p>${mensaje}</p>`;
+}
 
-    // Añadir efecto hover a las tarjetas
-    $('.card').hover(
-        function() {
-            $(this).css('transform', 'scale(1.05)');
-        }, function() {
-            $(this).css('transform', 'scale(1)');
-        }
-    );
-
-    // Ocultar el menú después de seleccionar una opción
-    $('#nav a').click(function() {
-        seleccionar();
-    });
-});
+// Llamar a la función para obtener y mostrar las recetas de aperitivos al cargar la página
+window.onload = function() {
+    getAperitivos();
+};
